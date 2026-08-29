@@ -1756,7 +1756,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LM7805_TO220"
+		(symbol "IC_CLOCK:LM7805_TO220_HEAT_SINK"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1771,7 +1771,7 @@
 					)
 				)
 			)
-			(property "Value" "LM7805_TO220"
+			(property "Value" "LM7805_TO220_HEAT_SINK"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -1826,7 +1826,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM7805_TO220_0_1"
+			(symbol "LM7805_TO220_HEAT_SINK_0_1"
 				(rectangle
 					(start -5.08 1.905)
 					(end 5.08 -5.08)
@@ -1839,7 +1839,7 @@
 					)
 				)
 			)
-			(symbol "LM7805_TO220_1_1"
+			(symbol "LM7805_TO220_HEAT_SINK_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -1887,6 +1887,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "HEADSINK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -3.81 180)
+					(length 2.54)
+					(name "HEADSINK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2609,6 +2645,12 @@
 		(uuid "213b8a64-6247-43fc-83b6-3e22f173e3e2")
 	)
 	(junction
+		(at 102.87 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c61007f-b2ce-4a3a-95c0-b5803a1f93f2")
+	)
+	(junction
 		(at 120.65 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2657,12 +2699,6 @@
 		(uuid "a6dbb5bf-5ad3-41f3-9aa7-a4acb5757552")
 	)
 	(junction
-		(at 100.33 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a98222ea-b5cb-4dc3-bed3-4ee7dc10ca9f")
-	)
-	(junction
 		(at 120.65 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2691,6 +2727,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f870cfeb-39b4-4a91-9f02-564ec6c8ae06")
+	)
+	(no_connect
+		(at 118.11 104.14)
+		(uuid "4f31ba15-cf5d-4c36-b6ea-f656f8236da9")
+	)
+	(no_connect
+		(at 118.11 105.41)
+		(uuid "e7f6595b-8a8d-4dc9-946d-77bb8c466e4f")
 	)
 	(wire
 		(pts
@@ -2791,26 +2835,6 @@
 			(type default)
 		)
 		(uuid "1b76608e-525e-435f-acca-fdfec0b99ba4")
-	)
-	(wire
-		(pts
-			(xy 100.33 35.56) (xy 102.87 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "229b8137-d68d-48c9-81dd-c2783de0cbfe")
-	)
-	(wire
-		(pts
-			(xy 100.33 49.53) (xy 102.87 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2594ec68-b27a-415f-8ff3-cc843eef4003")
 	)
 	(wire
 		(pts
@@ -2934,7 +2958,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 35.56) (xy 100.33 49.53)
+			(xy 102.87 35.56) (xy 102.87 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3014,7 +3038,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 35.56) (xy 100.33 35.56)
+			(xy 92.71 35.56) (xy 102.87 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3506,7 +3530,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Axial_L11.0mm_D6.0mm_P18.00mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 133.0452 57.15 0)
 			(effects
 				(font
@@ -4363,7 +4387,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P7.50mm"
 			(at 93.6752 116.84 0)
 			(effects
 				(font
@@ -4814,14 +4838,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "${SIM.PARAMS}"
+		(property "Value" "0.1u"
 			(at 106.68 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
@@ -4868,6 +4891,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
@@ -5166,7 +5190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "digikey-footprints:TO-220-3"
+		(property "Footprint" "IC_CLOCK:TO-220-HEADSINK-35X12"
 			(at 115.57 30.48 0)
 			(effects
 				(font
@@ -5298,6 +5322,84 @@
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IC_CLOCK:LM7805_TO220_HEAT_SINK")
+		(at 110.49 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72a1bda1-6d63-4ce5-afc4-0b94ee064e2c")
+		(property "Reference" "U1"
+			(at 110.49 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM7805_TO220_HEAT_SINK"
+			(at 110.49 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "IC_CLOCK:TO-220-HEADSINK-35X12"
+			(at 110.49 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
+			(at 110.49 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
+			(at 110.49 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "f1c97d64-2488-43fd-b74a-1c0cda67750a")
+		)
+		(pin "1"
+			(uuid "daf52445-a72c-405b-bbf5-f86a76a3a3ca")
+		)
+		(pin "5"
+			(uuid "9e358e64-21fc-4639-83fe-903ba2a52a96")
+		)
+		(pin "3"
+			(uuid "9623cf5d-8645-4945-9a29-5dafea91fc5e")
+		)
+		(pin "2"
+			(uuid "41f505f6-0edc-4cbc-b997-cb3906be0a05")
+		)
+		(instances
+			(project "IC_CLOCK_POWER"
+				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5518,78 +5620,6 @@
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM7805_TO220")
-		(at 110.49 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87142820-deff-44d4-b62f-0d2aecbebe6b")
-		(property "Reference" "U1"
-			(at 110.49 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM7805_TO220"
-			(at 110.49 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 110.49 95.885 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-			(at 110.49 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
-			(at 110.49 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4e624a2a-50c7-4ca7-883d-86e5ab2ec04d")
-		)
-		(pin "3"
-			(uuid "0cf1cb03-c537-450f-a7a9-32f3297bc47e")
-		)
-		(pin "1"
-			(uuid "3bc818e4-e5ac-4ae3-b5ae-1f0728f5a3a5")
-		)
-		(instances
-			(project "IC_CLOCK_POWER"
-				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5929,10 +5959,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ab391c44-2c3c-44b7-beea-6fb6e3ac84ca")
 		(property "Reference" "D4"
-			(at 95.25 52.0699 90)
+			(at 88.646 52.832 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5941,7 +5970,7 @@
 			)
 		)
 		(property "Value" "1N4002"
-			(at 95.25 54.6099 90)
+			(at 89.662 50.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6341,7 +6370,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P7.50mm"
 			(at 63.1952 67.31 0)
 			(effects
 				(font
@@ -6449,7 +6478,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal"
 			(at 208.28 25.4 0)
 			(effects
 				(font
