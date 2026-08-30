@@ -1681,7 +1681,7 @@
 				)
 			)
 			(symbol "Bridge_Rectifiers_1_1"
-				(pin power_out line
+				(pin passive line
 					(at -7.62 0 0)
 					(length 2.54)
 					(name "-"
@@ -1735,7 +1735,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 7.62 0 180)
 					(length 2.54)
 					(name "+"
@@ -1756,7 +1756,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "IC_CLOCK:LM7805_TO220_HEAT_SINK"
+		(symbol "Regulator_Linear:L7805"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1771,7 +1771,7 @@
 					)
 				)
 			)
-			(property "Value" "LM7805_TO220_HEAT_SINK"
+			(property "Value" "L7805"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -1780,17 +1780,18 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-				(at 0 5.715 0)
+			(property "Footprint" ""
+				(at 0.635 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
+			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
 				(at 0 -1.27 0)
 				(effects
 					(font
@@ -1799,7 +1800,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
+			(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1808,7 +1809,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 1A Positive"
+			(property "ki_keywords" "Voltage Regulator 1.5A Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1817,7 +1818,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?220*"
+			(property "ki_fp_filters" "TO?252* TO?263* TO?220*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1826,7 +1827,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM7805_TO220_HEAT_SINK_0_1"
+			(symbol "L7805_0_1"
 				(rectangle
 					(start -5.08 1.905)
 					(end 5.08 -5.08)
@@ -1839,11 +1840,11 @@
 					)
 				)
 			)
-			(symbol "LM7805_TO220_HEAT_SINK_1_1"
+			(symbol "L7805_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "VI"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1879,7 +1880,7 @@
 				(pin power_out line
 					(at 7.62 0 180)
 					(length 2.54)
-					(name "VO"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1887,42 +1888,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "HEADSINK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -3.81 180)
-					(length 2.54)
-					(name "HEADSINK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2506,107 +2471,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
 		(at 62.23 46.99)
@@ -2627,10 +2491,10 @@
 		(uuid "146f8c84-8f59-47cb-91ab-ab3a9d339775")
 	)
 	(junction
-		(at 55.88 46.99)
+		(at 92.71 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "167c8930-9035-455f-87d0-8ea2fc758215")
+		(uuid "1e65063c-f4c6-4c9c-afeb-7d5a9dddf83a")
 	)
 	(junction
 		(at 92.71 76.2)
@@ -2645,28 +2509,22 @@
 		(uuid "213b8a64-6247-43fc-83b6-3e22f173e3e2")
 	)
 	(junction
-		(at 102.87 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c61007f-b2ce-4a3a-95c0-b5803a1f93f2")
-	)
-	(junction
 		(at 120.65 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4082e045-135c-4b1b-b092-65a6fb4b6bca")
 	)
 	(junction
+		(at 55.88 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "480126eb-6b46-497a-96e5-e8bb1918afaf")
+	)
+	(junction
 		(at 92.71 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "50b934c3-2c7c-4b61-9176-585b8a25669d")
-	)
-	(junction
-		(at 92.71 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d1e14ba-21f7-4a7e-9533-bef4f8d2f1a5")
 	)
 	(junction
 		(at 135.89 76.2)
@@ -2711,30 +2569,22 @@
 		(uuid "bb00e8fb-27b0-46ff-ba5d-bda9df13fa8f")
 	)
 	(junction
-		(at 92.71 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9f5af73-242d-4f41-985b-10201ecdcdfc")
-	)
-	(junction
 		(at 110.49 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb1467d9-df42-427b-adc3-e0253bcfd5cf")
 	)
 	(junction
+		(at 102.87 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e51f5866-435e-4549-9423-acb26bd0a5f6")
+	)
+	(junction
 		(at 132.08 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f870cfeb-39b4-4a91-9f02-564ec6c8ae06")
-	)
-	(no_connect
-		(at 118.11 104.14)
-		(uuid "4f31ba15-cf5d-4c36-b6ea-f656f8236da9")
-	)
-	(no_connect
-		(at 118.11 105.41)
-		(uuid "e7f6595b-8a8d-4dc9-946d-77bb8c466e4f")
 	)
 	(wire
 		(pts
@@ -2798,7 +2648,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 57.15) (xy 92.71 59.69)
+			(xy 92.71 57.15) (xy 92.71 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2815,6 +2665,16 @@
 			(type default)
 		)
 		(uuid "16205500-abc6-42e5-b3ee-ffaf64493e2c")
+	)
+	(wire
+		(pts
+			(xy 110.49 109.22) (xy 110.49 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1919cecc-c236-4684-93ff-f0ca39d33ced")
 	)
 	(wire
 		(pts
@@ -2858,13 +2718,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 109.22) (xy 110.49 116.84)
+			(xy 92.71 101.6) (xy 102.87 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "32ad5093-308b-4eaf-886c-c2916859bf0b")
+		(uuid "310c1082-c3c5-495c-a260-66684ed868dd")
 	)
 	(wire
 		(pts
@@ -2885,6 +2745,16 @@
 			(type default)
 		)
 		(uuid "35b6e970-bd41-4b3c-a442-c1aae7001851")
+	)
+	(wire
+		(pts
+			(xy 92.71 101.6) (xy 92.71 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35df019c-612f-48e9-8608-65eb4f4363e3")
 	)
 	(wire
 		(pts
@@ -2925,16 +2795,6 @@
 			(type default)
 		)
 		(uuid "3ca3b874-d47e-449b-b4f0-d4c83f0251b2")
-	)
-	(wire
-		(pts
-			(xy 92.71 59.69) (xy 92.71 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dbf6c77-aab9-46db-b5da-8c8e8d5d739c")
 	)
 	(wire
 		(pts
@@ -2985,16 +2845,6 @@
 			(type default)
 		)
 		(uuid "495597a9-2630-41d4-88a9-c5d086d3054a")
-	)
-	(wire
-		(pts
-			(xy 92.71 101.6) (xy 102.87 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f1b47a2-5d1f-4441-bd89-5b7f927b4cba")
 	)
 	(wire
 		(pts
@@ -3128,16 +2978,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 20.32) (xy 203.2 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81dc2178-8249-412f-9e57-1f246f162d54")
-	)
-	(wire
-		(pts
 			(xy 106.68 22.86) (xy 92.71 22.86)
 		)
 		(stroke
@@ -3145,16 +2985,6 @@
 			(type default)
 		)
 		(uuid "845e9795-287a-4283-b1d0-db07ddedd658")
-	)
-	(wire
-		(pts
-			(xy 92.71 101.6) (xy 92.71 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86d99fca-5b4f-4460-afe2-db8f9f42ef30")
 	)
 	(wire
 		(pts
@@ -3214,7 +3044,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "95597a91-a0cc-418e-a5db-959a9d32a027")
+		(uuid "93f0c14c-a410-46b2-b8e6-6fd3255736d9")
 	)
 	(wire
 		(pts
@@ -3378,16 +3208,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 76.2) (xy 92.71 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6712738-b973-4c24-a9cf-43c3abe9f4ee")
-	)
-	(wire
-		(pts
 			(xy 36.83 36.83) (xy 48.26 36.83)
 		)
 		(stroke
@@ -3405,6 +3225,16 @@
 			(type default)
 		)
 		(uuid "ec2179a4-aa21-484a-b3f3-f183be889db9")
+	)
+	(wire
+		(pts
+			(xy 110.49 116.84) (xy 110.49 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff1d5de-dd84-448c-b815-85bd8dcef2ae")
 	)
 	(wire
 		(pts
@@ -3428,6 +3258,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 20.32) (xy 203.2 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f58b46cd-8d1b-44dc-9577-eded77e7edfa")
+	)
+	(wire
+		(pts
 			(xy 172.72 35.56) (xy 167.64 35.56)
 		)
 		(stroke
@@ -3436,31 +3276,39 @@
 		)
 		(uuid "f864a749-9985-4350-83c4-7d3ce1f261b4")
 	)
-	(global_label "12VAC"
-		(shape input)
-		(at 39.37 36.83 90)
-		(fields_autoplaced yes)
+	(wire
+		(pts
+			(xy 92.71 76.2) (xy 92.71 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb578f89-c4be-4997-b183-801537117a16")
+	)
+	(label "12VAC"
+		(at 198.12 20.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "71e28f5b-f4a0-493c-909f-0ea11e71af08")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 27.9786 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "8ad9c39b-28ed-423b-8d4d-c3ddcb200ea2")
 	)
-	(global_label "AC-GND"
+	(label "12VAC"
+		(at 41.91 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fba34f17-6cd5-4100-b808-44a5e73a4579")
+	)
+	(global_label "12VAC"
 		(shape input)
-		(at 39.37 57.15 270)
+		(at 195.58 20.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3468,31 +3316,9 @@
 			)
 			(justify right)
 		)
-		(uuid "9a9a61a0-d2f7-4e79-b096-b354fdf70ebc")
+		(uuid "df48fea1-fd73-416b-aac1-22ec76acddbf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 67.9367 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "12VAC"
-		(shape input)
-		(at 198.12 20.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c2239ac9-b413-47c8-aaae-02cf5d5a2b3c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 189.2686 20.32 0)
+			(at 186.7286 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3530,7 +3356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Axial_L11.0mm_D6.0mm_P18.00mm_Horizontal"
 			(at 133.0452 57.15 0)
 			(effects
 				(font
@@ -4073,73 +3899,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 92.71 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15889fea-48df-4c57-9456-cd9e10b2c9b6")
-		(property "Reference" "#FLG01"
-			(at 90.805 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 88.9 59.6899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 92.71 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "651ad0ad-21ce-4c91-aa55-4755475af4d2")
-		)
-		(instances
-			(project "IC_CLOCK_POWER"
-				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 154.94 53.34 180)
 		(unit 1)
@@ -4229,6 +3988,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 110.49 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25f88529-6f80-4c1b-92f8-a9956b6fdb07")
+		(property "Reference" "#PWR03"
+			(at 110.49 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b24b8bf-ee8e-42bc-98f2-609db159db17")
+		)
+		(instances
+			(project "IC_CLOCK_POWER"
+				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 55.88 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4294,72 +4119,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 110.49 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "297681c8-bab6-4ce0-a2db-0f97efa2712d")
-		(property "Reference" "#PWR01"
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 110.49 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "21726cee-f09c-4b02-b5a0-df2572440fe1")
-		)
-		(instances
-			(project "IC_CLOCK_POWER"
-				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 92.71 113.03 0)
 		(unit 1)
@@ -4387,7 +4146,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P7.50mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 93.6752 116.84 0)
 			(effects
 				(font
@@ -4442,6 +4201,72 @@
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d0e0747-1b79-4c76-b1c9-551e60a31301")
+		(property "Reference" "#PWR01"
+			(at 203.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.2 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1a9913f-f0c8-41ce-9497-a5d86cb17f78")
+		)
+		(instances
+			(project "IC_CLOCK_POWER"
+				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4508,6 +4333,169 @@
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_PMIC-Voltage-Regulators-Linear:LM317T")
+		(at 110.49 35.56 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cfd00d4-6338-40f5-be31-807ce0a56a7c")
+		(property "Reference" "U1"
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "LM317T"
+			(at 110.49 30.48 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220F-3_HEATSINK_Vertical"
+			(at 115.57 30.48 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "IC REG LIN POS ADJ 1.5A TO220AB"
+			(at 110.49 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "497-1575-5-ND"
+			(at 115.57 25.4 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LM317T"
+			(at 115.57 22.86 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Integrated Circuits (ICs)"
+			(at 115.57 20.32 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "PMIC - Voltage Regulators - Linear"
+			(at 115.57 17.78 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf"
+			(at 115.57 15.24 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/stmicroelectronics/LM317T/497-1575-5-ND/591677"
+			(at 115.57 12.7 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "IC REG LIN POS ADJ 1.5A TO220AB"
+			(at 115.57 10.16 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 115.57 7.62 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 115.57 5.08 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a0d09baf-fe51-4521-bb78-14a72d1bab55")
+		)
+		(pin "1"
+			(uuid "e912830b-c927-4d0f-b4fc-bf41f001f448")
+		)
+		(pin "2"
+			(uuid "e42c31f7-f80a-4589-84c4-85aba3bb5ab1")
+		)
+		(instances
+			(project "IC_CLOCK_POWER"
+				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -4838,13 +4826,14 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "${SIM.PARAMS}"
 			(at 106.68 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
@@ -4891,7 +4880,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
@@ -5159,247 +5147,6 @@
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "dk_PMIC-Voltage-Regulators-Linear:LM317T")
-		(at 110.49 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e64d9ed-d121-4d9b-83e9-110cbd501a8b")
-		(property "Reference" "U2"
-			(at 110.49 27.94 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "LM317T"
-			(at 110.49 30.48 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "IC_CLOCK:TO-220-HEADSINK-35X12"
-			(at 115.57 30.48 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf"
-			(at 115.57 27.94 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "IC REG LIN POS ADJ 1.5A TO220AB"
-			(at 110.49 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digi-Key_PN" "497-1575-5-ND"
-			(at 115.57 25.4 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "MPN" "LM317T"
-			(at 115.57 22.86 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Category" "Integrated Circuits (ICs)"
-			(at 115.57 20.32 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Family" "PMIC - Voltage Regulators - Linear"
-			(at 115.57 17.78 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "DK_Datasheet_Link" "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/a0/db/e6/9b/6f/9c/45/7b/CD00000455/files/CD00000455.pdf/jcr:content/translations/en.CD00000455.pdf"
-			(at 115.57 15.24 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "DK_Detail_Page" "/product-detail/en/stmicroelectronics/LM317T/497-1575-5-ND/591677"
-			(at 115.57 12.7 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "IC REG LIN POS ADJ 1.5A TO220AB"
-			(at 115.57 10.16 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "STMicroelectronics"
-			(at 115.57 7.62 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Status" "Active"
-			(at 115.57 5.08 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a1e911ca-9b06-4c86-b249-7e5fc4cc7336")
-		)
-		(pin "2"
-			(uuid "e3dd7002-7d9d-4689-a1de-6e924d61631f")
-		)
-		(pin "1"
-			(uuid "6c71a294-d76d-4ceb-935f-7b37dc632a6d")
-		)
-		(instances
-			(project "IC_CLOCK_POWER"
-				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "IC_CLOCK:LM7805_TO220_HEAT_SINK")
-		(at 110.49 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72a1bda1-6d63-4ce5-afc4-0b94ee064e2c")
-		(property "Reference" "U1"
-			(at 110.49 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM7805_TO220_HEAT_SINK"
-			(at 110.49 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "IC_CLOCK:TO-220-HEADSINK-35X12"
-			(at 110.49 95.885 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-			(at 110.49 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
-			(at 110.49 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "f1c97d64-2488-43fd-b74a-1c0cda67750a")
-		)
-		(pin "1"
-			(uuid "daf52445-a72c-405b-bbf5-f86a76a3a3ca")
-		)
-		(pin "5"
-			(uuid "9e358e64-21fc-4639-83fe-903ba2a52a96")
-		)
-		(pin "3"
-			(uuid "9623cf5d-8645-4945-9a29-5dafea91fc5e")
-		)
-		(pin "2"
-			(uuid "41f505f6-0edc-4cbc-b997-cb3906be0a05")
-		)
-		(instances
-			(project "IC_CLOCK_POWER"
-				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5959,9 +5706,10 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "ab391c44-2c3c-44b7-beea-6fb6e3ac84ca")
 		(property "Reference" "D4"
-			(at 88.646 52.832 90)
+			(at 95.25 52.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5970,7 +5718,7 @@
 			)
 		)
 		(property "Value" "1N4002"
-			(at 89.662 50.038 90)
+			(at 95.25 54.6099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6277,17 +6025,43 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 203.2 27.94 0)
+		(lib_id "Regulator_Linear:L7805")
+		(at 110.49 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf9f70f3-29f3-43f7-8515-6948be9b32a2")
-		(property "Reference" "#PWR03"
-			(at 203.2 34.29 0)
+		(uuid "cb62d64a-356e-4e84-95ee-d4e1b73c9c39")
+		(property "Reference" "U2"
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L7805"
+			(at 110.49 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220F-3_HEATSINK_Vertical"
+			(at 111.125 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
+			(at 110.49 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6295,16 +6069,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 203.2 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 27.94 0)
+		(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
+			(at 110.49 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6312,8 +6078,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 203.2 27.94 0)
+		(property "Sim.Device" "XSPICE"
+			(at 110.49 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6321,22 +6087,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "bbae204e-9f71-4317-ba98-fb53ed2cad3f")
+		)
+		(pin "2"
+			(uuid "1a008ccd-2e8d-4e45-ba0c-77cc791fa5f7")
 		)
 		(pin "1"
-			(uuid "d25d8439-a125-40ea-9710-4b9ffc43f4d4")
+			(uuid "cd46b294-5873-480b-9e3a-f9d1d8c7859b")
 		)
 		(instances
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
-					(reference "#PWR03")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -6370,7 +6133,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P7.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm"
 			(at 63.1952 67.31 0)
 			(effects
 				(font
@@ -6478,7 +6241,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
 			(at 208.28 25.4 0)
 			(effects
 				(font
@@ -6521,6 +6284,99 @@
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IC_CLOCK:Bridge_Rectifiers")
+		(at 48.26 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e66e4e2b-c2ed-4b80-be36-2a3149a2768a")
+		(property "Reference" "D5"
+			(at 58.42 40.5698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DB107"
+			(at 58.42 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "IC_CLOCK:Bridge_Rectifier_4EDIP"
+			(at 52.07 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=K"
+			(at 48.26 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a02bf62-bafc-4228-91a4-d7cdf0dc173b")
+		)
+		(pin "1"
+			(uuid "589093a7-4e46-4876-aa51-3676061e5561")
+		)
+		(pin "3"
+			(uuid "376fb790-ab17-41f8-a84c-b57a1ff91189")
+		)
+		(pin "4"
+			(uuid "6326f1db-a533-4db0-a885-3fd5827932a4")
+		)
+		(instances
+			(project "IC_CLOCK_POWER"
+				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6849,81 +6705,6 @@
 			(project "IC_CLOCK_POWER"
 				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "IC_CLOCK:Bridge_Rectifiers")
-		(at 48.26 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7bdb43d-f76e-4765-9cdc-be0a69c30e48")
-		(property "Reference" "D3"
-			(at 62.23 40.5698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Bridge_Rectifiers"
-			(at 62.23 43.1098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "IC_CLOCK:Bridge_Rectifier_4EDIP"
-			(at 52.07 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 48.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cf69350e-2efe-4621-8c6f-14af9a95e51e")
-		)
-		(pin "3"
-			(uuid "6b986502-fc5f-41d9-b4bb-2282d89cfca1")
-		)
-		(pin "1"
-			(uuid "1292ca8e-de00-454e-9ea2-8f5aec061365")
-		)
-		(pin "4"
-			(uuid "c311811b-2118-47e4-b95a-d2163f4ddc79")
-		)
-		(instances
-			(project "IC_CLOCK_POWER"
-				(path "/5e066d53-1ba4-4246-9683-66b64aadc766"
-					(reference "D3")
 					(unit 1)
 				)
 			)
