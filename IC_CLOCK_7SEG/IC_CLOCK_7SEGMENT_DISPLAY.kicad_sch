@@ -392,6 +392,210 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x08_Pin"
 			(pin_names
 				(offset 1.016)
@@ -1770,6 +1974,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 72.39) (xy 147.32 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27d18603-f27d-45fc-b464-04e8565fde69")
+	)
+	(wire
+		(pts
 			(xy 31.75 36.83) (xy 34.29 36.83)
 		)
 		(stroke
@@ -1867,6 +2081,16 @@
 			(type default)
 		)
 		(uuid "6a4cc851-03ac-43e8-b035-22cd1235e902")
+	)
+	(wire
+		(pts
+			(xy 139.7 69.85) (xy 162.56 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c25fc86-52d9-4c7a-9c25-c5abfb423c70")
 	)
 	(wire
 		(pts
@@ -2107,6 +2331,16 @@
 			(type default)
 		)
 		(uuid "dc675511-bb4a-487f-a2e2-47c18f75e120")
+	)
+	(wire
+		(pts
+			(xy 139.7 67.31) (xy 157.48 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9d021d7-34af-4e33-bb5e-537206984644")
 	)
 	(wire
 		(pts
@@ -2754,7 +2988,7 @@
 			(uuid "647962c3-75f3-47df-8e8a-7ac678990837")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR08")
 					(unit 1)
@@ -2821,7 +3055,7 @@
 			(uuid "4798a40b-75af-484c-82f1-9ff042e5054b")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R6")
 					(unit 1)
@@ -2887,7 +3121,7 @@
 			(uuid "8bfc10d3-016d-474c-ae2f-dfadf298793d")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR03")
 					(unit 1)
@@ -2953,9 +3187,75 @@
 			(uuid "463bd5f9-7650-4505-b38b-081170b95633")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 162.56 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f34400a-ba5a-4a19-8c26-5a22e7620d8a")
+		(property "Reference" "#PWR014"
+			(at 162.56 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 162.56 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 162.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23635164-f931-42f9-9302-dafde56a07c8")
+		)
+		(instances
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
+				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3021,9 +3321,80 @@
 			(uuid "df83e2d4-6bfa-451f-a506-afe91468d65a")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 134.62 69.85 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "401a5793-d774-4366-afde-5e2a890e1cd2")
+		(property "Reference" "J2"
+			(at 135.255 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 135.255 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 134.62 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 134.62 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e53bdba-d9b7-4db9-ae82-a593ca39367f")
+		)
+		(pin "1"
+			(uuid "e87aaee0-7569-4e07-914e-c6496244a171")
+		)
+		(pin "3"
+			(uuid "da75237b-794f-4c05-b8e0-83f2dc6d2a09")
+		)
+		(instances
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
+				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3087,7 +3458,7 @@
 			(uuid "3a86eaa3-4103-4667-ab83-23299728b540")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR010")
 					(unit 1)
@@ -3154,7 +3525,7 @@
 			(uuid "c2836645-4914-429c-a0b2-55b7ea9df18c")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R5")
 					(unit 1)
@@ -3220,7 +3591,7 @@
 			(uuid "e470e9d0-f1e3-4c11-aeae-8ea4e07099f5")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR01")
 					(unit 1)
@@ -3286,7 +3657,7 @@
 			(uuid "be25b60c-def3-4078-8ba2-27197ddeb038")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR07")
 					(unit 1)
@@ -3352,7 +3723,7 @@
 			(uuid "f6cce566-7eb3-4036-83ff-d7bc49c97e84")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR06")
 					(unit 1)
@@ -3419,7 +3790,7 @@
 			(uuid "040215bd-9399-4ad4-9e55-34cf34afc4f3")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R1")
 					(unit 1)
@@ -3486,9 +3857,75 @@
 			(uuid "1284cb90-ec0a-4495-8d62-58a864c8fd72")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 147.32 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e7abae2-03e4-455e-8489-817faaa1ba1d")
+		(property "Reference" "#PWR012"
+			(at 147.32 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 147.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03ace2bf-fe9f-497f-bf47-3f0ff39f8502")
+		)
+		(instances
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
+				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3552,7 +3989,7 @@
 			(uuid "78d27e55-2a5f-43bf-9379-dfa69f784ef8")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR04")
 					(unit 1)
@@ -3618,7 +4055,7 @@
 			(uuid "dc44d0e1-f1e8-43f6-ba55-c629ea1b5262")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR02")
 					(unit 1)
@@ -3704,7 +4141,7 @@
 			(uuid "a9da35c4-1729-45af-900d-d25250486fc1")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "J1")
 					(unit 1)
@@ -3816,7 +4253,7 @@
 			(uuid "ca120eaa-37b6-49d4-ab92-efaaa6c9d998")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "U2")
 					(unit 1)
@@ -3882,7 +4319,7 @@
 			(uuid "4b7b8d20-88a6-4ed4-b7fe-965e01eb63f4")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR011")
 					(unit 1)
@@ -3948,7 +4385,7 @@
 			(uuid "8a78fc33-af07-4c18-94ed-358f182db332")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "#PWR05")
 					(unit 1)
@@ -4039,7 +4476,7 @@
 			(uuid "0bcdd49e-f9e1-4d60-9680-517f44989ccb")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "U1")
 					(unit 1)
@@ -4106,7 +4543,7 @@
 			(uuid "a4c56da9-d12b-4f5a-a799-d5d1e9b1e112")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R8")
 					(unit 1)
@@ -4173,7 +4610,7 @@
 			(uuid "8d831552-9012-4789-8da8-195417afb927")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R4")
 					(unit 1)
@@ -4241,9 +4678,75 @@
 			(uuid "51365c55-b9f3-4930-b283-ee345b934e0a")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+10V")
+		(at 157.48 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2f24864-3c56-4273-a936-2690679ffb24")
+		(property "Reference" "#PWR013"
+			(at 157.48 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+10V"
+			(at 157.48 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+10V\""
+			(at 157.48 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b24086f-c5f5-4d61-b831-4cd4476ef11a")
+		)
+		(instances
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
+				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4308,7 +4811,7 @@
 			(uuid "40f6f2f7-a6d7-4fd6-827c-538e367808cc")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R3")
 					(unit 1)
@@ -4375,7 +4878,7 @@
 			(uuid "8748e138-a576-4e5d-a98d-d4d5e08f6b05")
 		)
 		(instances
-			(project "IC_CLOCK"
+			(project "IC_CLOCK_7SEGMENT_DISPLAY"
 				(path "/770333be-f5de-4aea-888e-95d246d3f30f"
 					(reference "R2")
 					(unit 1)
